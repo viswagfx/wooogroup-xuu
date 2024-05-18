@@ -1,5 +1,24 @@
 <!DOCTYPE html>
 <html>
+    <head> <!--i stole thisfrom a random tutorial ty-->
+        <style>
+            @keyframes bounce {
+                0%, 20%, 50%, 80%, 100% {
+                    transform: translateY(0);
+                }
+                40% {
+                    transform: translateY(-30px);
+                }
+                60% {
+                    transform: translateY(-15px);
+                }
+            }
+
+            .bounce {
+                animation: bounce 1s;
+            }
+        </style>
+    </head>
     <body>
         <p>sigma gyatt</p>
         <img src="/pee/IMG_1734.jpg" id="poopu" style="cursor: pointer;">
@@ -7,11 +26,13 @@
         <p>robux erned: <span id="gyatt">0</span></p>
         <p><span id="bigma" style="cursor: pointer;"> click to cash out real not fa ke at all trust me bro</span></p>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/FPbEeqAeU2o?si=o52Zr1LomYbj_G_o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <img src="/pee/pooter.jpg" id="pooter" style="cursor: pointer;">
         <script>
             let ogoog = 0;
             const gopg = document.getElementById('poopu')
             const helpme =document.getElementById('gyatt')
             const dfo = document.getElementById('bigma')
+            const pooper = document.getElementById('pooter')
             gopg.addEventListener('click', () => {
                 ogoog++;
                 helpme.textContent = ogoog;
@@ -20,6 +41,12 @@
                 ogoog = 0;
                 helpme.textContent = ogoog;
             })
+            pooter.addEventListener('click', () => {
+                pooter.classList.add('bounce');
+                setTimeout(() => {
+                    pooter.classList.remove('bounce');
+                }, 1000);
+            });
         </script>
     </body>
 </html>
